@@ -1,0 +1,17 @@
+{
+	"title":"Half Note and Half Rest",
+	"description":"Latin and Italian terms also apply to rests for example 'Minim Rest'.",
+	"lines":
+	[
+		"16:R7-L7-8-R7-L7-R7-8-L7-8-R7-",
+		"16:L7-R7-8-L7-R7-L7-8-R7-8-L7-R7-L7-",
+		"16:8-R7-L7-R7-8-L7-R7-L7-R7-L7-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":2,"l":3},
+		{"p":2,"l":4},
+		{"p":2,"l":5}
+	]
+}

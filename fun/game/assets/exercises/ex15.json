@@ -1,0 +1,21 @@
+{
+	"title":"Eighth, Quarter, Half and Whole Note, and  Whole and Eighth Rest",
+	"description":"",
+	"lines":
+	[
+		"16:R1-L1-R3-L7-,R15-L3-R3-L1-R1-L1-R1-,L1-R1-L1-R1-L3-R3-",
+		"16:2-L1-R1-L1-2-R1-L1-R1-,L3-R1-L1-R1-L1-R3-,L3-R1-L1-R3-L1-R1-L3-R3-L7-",
+		"16:2-R-L3-R3-L3-16-R7-L-R-L-R-L-R-L-R-L7-",
+		"16:R7-L-R-L3-R3-L7-R3-,L3-R3-L-R-L3-R-L-R-2-8-",
+		"16:L15-R3-2-L-R3-L3-16-R3-L3-2-R-L3-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":6,"l":3},
+		{"p":6,"l":4},
+		{"p":6,"l":5},
+		{"p":6,"l":6},
+		{"p":6,"l":7}
+	]
+}

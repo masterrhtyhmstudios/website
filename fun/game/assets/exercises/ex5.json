@@ -1,0 +1,17 @@
+{
+	"title":"Half Note (Minim), Whole Note (Semi-Breeve) Half Rest and Whole Rest",
+	"description":"",
+	"lines":
+	[
+		"16:R7-L7-R15-8-L7-R15-L7-R7-",
+		"16:L7-R7-8-L7-R15-16-L7-R7-8-L7-",
+		"16:R7-L7-16-R7-L7-8-R7-L15-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":2,"l":6},
+		{"p":2,"l":7},
+		{"p":2,"l":8}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title":"Eighth Note, Quarter Note and Quarter Rest",
+	"description":"",
+	"lines":
+	[
+		"16:R1-L1-R1-L1-R3-L3-,R3-L3-R1-L1-R1-L1-,R1-L1-R3-L3-R3-,L3-R3-L3-R1-L1-",
+		"16:R3-L1-R1-L1-R1-L3-,R1-L1-R3-L3-R1-L1-,R3-4-L1-R1-L3-,R3-L3-4-R1-L1-",
+		"16:R3-L1-R1-L3-R1-L1-,4-R3-L1-R1-L1-R1-L1-R-L3-,R-L-R3-L1-R1-L1-R-L3-4-,L1-R1-L1-R1-L3-4-",
+		"16:R3-L1-R1-L3-R3-,L3-R3-L1-R1-L3-,4-R3-L1-R1-L1-R1-,4-L1-R1-L1-R1-4-",
+		"16:L1-R1-L3-R3-L1-R1-,4-L3-R1-L1-R3-,L3-R1-L1-R1-L1-R3-,4-L1-R1-L3-4-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":5,"l":1},
+		{"p":5,"l":2},
+		{"p":5,"l":3},
+		{"p":5,"l":4},
+		{"p":5,"l":5}
+	]
+}

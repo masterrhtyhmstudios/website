@@ -1,0 +1,318 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 0 60px black; 
+  background-color: #c4bab0; 
+  border: 0px; 
+  opacity: 1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#myCarousel {
+  position: relative;
+}
+
+#menu {
+  /*background-color: #795548;*/
+}
+
+.squareInner {
+  font-size: 64px; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) {
+  .menuItem {
+    display: none;
+    border-right: thick solid #000000;
+  }
+  .navbar {
+    height: 128px;
+  }
+
+  #navLogo {
+    height: 112px;
+  }
+
+  #myCarousel {
+    top: 78px;
+  }
+
+  #banner {
+    position: relative;
+    top: 58px;
+  }
+
+  #menu {
+    font-size: 24px;
+    right: 5%;
+    position: absolute;
+    top: 50%;
+    height: 32px;
+    margin-top: -16px;
+  }
+
+  #feature {
+    position: relative;
+    top: 64px;
+    padding-bottom: 80px;
+  }
+
+  .blog {
+    padding-bottom: 90px ;
+  }
+
+  img.buttonLayer {
+    padding-top: 80px;
+  }
+
+  .phoneNav {
+    display: none;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menuItem {
+    border-right: thick solid #000000;
+  }
+
+  #navLogo {
+    height: 80px;
+  }
+
+  #menu {
+    text-align: right;
+    font-size: 14px;
+    right: 10%;
+    position: absolute;
+    top: 50%;
+    height: 24px;
+    margin-top: -24px;
+  }
+
+  #myCarousel {
+    position: relative;
+    top: 46px;
+  }
+
+  .blog {
+    padding-bottom: 16px;
+  }
+
+  img.buttonLayer {
+    padding-top: 48px;
+  }
+
+  .tracks {
+    padding-top: 32px;
+  }
+
+  .phoneNav {
+    display: none;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .navbar {display: none}
+
+  .phoneNav {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    background-color: #c4bab0;
+  }
+
+  .phoneNavInner {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+
+  .phoneNavInner div {
+    display: table-cell;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 54px;
+    font-size: 24px;
+    /*border: thin solid #000000;*/
+  }
+
+  .phoneNavInner a {
+    background-color: #795548;
+    color: #ffffff;
+  }
+
+  .phoneNavInner #two {
+    background-color: #795548;
+    color: #000000;
+  }
+
+  .menuItem {
+    text-align: left;
+    font-size: 24px;
+    border-bottom: thin solid #000000;
+  }
+
+  #menu {
+    font-size: 16px;
+  }
+
+  #myCarousel {
+    position: relative;
+    top: -50px;
+  }
+
+  #feature {
+    position: relative;
+    top: -48px;
+  }
+
+  #navLogo {
+    height: 40px;
+  }
+
+  .blog {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .album {
+    padding-top: 16px;
+  }
+
+  .tracks {
+    padding-top: 48px;
+  }
+}
+
+.gameNav {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gameNavButton {
+  width: 25%;
+}
+
+.myDivider {
+  background-image: url("assets/img/repeatMusic.png");
+  background-repeat: repeat-x;
+}
+
+img.musicLine {
+  margin: 0 auto;
+  display: block;
+  width: 95%;
+  max-width: 750px;
+}
+
+.iframe-rwd  {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.iframe-rwd iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.intro {
+  display: none;
+}
+
+canvas {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events:none;
+}
+
+.hud {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  min-width: 250;
+  text-align: center;
+}
+
+img.buttonLayer {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+}
+
+.exerciseTitle {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  min-width: 250;
+  text-align: center;
+}
+
+.jumbotron {
+    position: relative;
+    background: #000 url("assets/img/workshop_blur.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 0 100px black;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  box-shadow: 0 0 100px black;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+  width: 100%;
+  min-width: 1000px;
+}

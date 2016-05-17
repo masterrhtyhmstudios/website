@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="favicon.ico">
+
+    <title>Fun - Master Rhythm Studios</title>
+
+    <script src="../../../assets/js/jquery.min.js"></script>
+    <script src="../../../assets/js/jquery.cycle.lite.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../jumbotron.css" rel="stylesheet">
+    <link href="../../../assets/css/hover.css" rel="stylesheet">
+
+    <style>
+      body { color: #666; font-family: sans-serif; line-height: 1.4; }
+      h1 em { font-style: normal; color: #999; }
+      a { color: #888; text-decoration: none; }
+      
+      ol { padding: 0px; margin: 0px; list-style: decimal-leading-zero inside; color: #ccc; width: 460px; border-top: 1px solid #ccc; font-size: 0.9em; }
+      ol li { position: relative; margin: 0px; padding: 9px 2px 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+      ol li a { display: block; text-indent: -3.3ex; padding: 0px 0px 0px 20px; }
+      li.playing { color: #aaa; text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3); }
+      li.playing a { color: #000; }
+      li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; line-height: 14px; margin: 0px; position: absolute; left: -24px; top: 9px; color: #000; font-size: 13px; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+      
+      #shortcuts { position: fixed; bottom: 0px; width: 100%; color: #666; font-size: 0.9em; margin: 60px 0px 0px; padding: 20px 20px 15px; background: #f3f3f3; background: rgba(240, 240, 240, 0.7); }
+      #shortcuts div { width: 460px; margin: 0px auto; }
+      #shortcuts em { font-style: normal; background: #d3d3d3; padding: 3px 9px; position: relative; left: -3px;
+        -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+    </style>
+    <script src="/MAMP/master-rhythm/assets/js/jquery.min.js"></script>
+    <script src="../../../audiojs/audio.min.js"></script>
+    <script>
+      $(function() { 
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+          trackEnded: function() {
+            var next = $('ol li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.addClass('playing').siblings().removeClass('playing');
+            audio.load($('a', next).attr('data-src'));
+            audio.play();
+          }
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+            first = $('ol a').attr('data-src');
+        $('ol li').first().addClass('playing');
+        audio.load(first);
+
+        // Load in a track on click
+        $('ol li').click(function(e) {
+          e.preventDefault();
+          $(this).addClass('playing').siblings().removeClass('playing');
+          audio.load($('a', this).attr('data-src'));
+          audio.play();
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+          var unicode = e.charCode ? e.charCode : e.keyCode;
+             // right arrow
+          if (unicode == 39) {
+            var next = $('li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.click();
+            // back arrow
+          } else if (unicode == 37) {
+            var prev = $('li.playing').prev();
+            if (!prev.length) prev = $('ol li').last();
+            prev.click();
+            // spacebar
+          } else if (unicode == 32) {
+            audio.playPause();
+          }
+        })
+      });
+    </script>
+  </head>
+
+  <body style="background-color: #FFF8E1">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <a class="hvr-shrink" href="../../../"><img id="navLogo" src="../../../assets/img/logo_text_black_noshadow.png"></a>
+        <div id="menu" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="menuItem hvr-underline-reveal" style="color: #000000;" href="../../lessons">Lessons</a></li>
+            <li><a class="menuItem hvr-underline-reveal" style="color: #000000;" href="../../booths">Booths</a></li>
+            <li><a class="menuItem hvr-underline-reveal" style="color: #ffffff" href="../">Tracks</a></li> 
+            <li><a class="menuItem hvr-underline-reveal" style="color: #000000" href="../../../blog">Blog</a></li>
+            <li><a class="hvr-underline-reveal" style="color: #000000" href="../contact">Contact</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    <div id="myCarousel" class="container">
+      <div class="row album" style="margin: 0 auto;">
+        <div class="col-sm-4" style="padding-top: 16px">
+          <img src="./poster.jpg" style="box-shadow: 0 0 30px black; width: 100%; max-width: 320px; margin: 0 auto; height: auto">
+          <h1>West Side Story</h1>
+          <p class="lead">
+            This is a surprise to me. All the teaching I've been doing allowed me to be able to read well enough to be able to play West Side Story on drums accurately - one of the most renowned pieces that is so hard to play. Please listen through semi decent speakers. This is classical music, but with groove. And yes I believe I did groove!!
+          </p>
+
+          <p class="lead">
+            Please note that this performance was done by muscians for free, and the actors and singer range from 8-16, and so is an ameteur performance.
+          </p>
+        </div>
+
+        <div id="wrapper" class="col-sm-8" style="padding: 32px; padding-top: 16px">
+          <audio preload></audio>
+          <ol>
+            <li><a href="#" data-src="audio/01-PROLOGUE.mp3">Prologue</a></li>
+            <li><a href="#" data-src="audio/02-JET SONG.mp3">Jet Song</a></li>
+            <li><a href="#" data-src="audio/03-SOMETHING'S COMING.mp3">Something's Coming</a></li>
+            <li><a href="#" data-src="audio/04-DANCE AT THE GYM (BLUES).mp3">Dance At The Gym</a></li>
+            <li><a href="#" data-src="audio/05-PROMENADE.mp3">Promenade</a></li>
+            <li><a href="#" data-src="audio/06-MAMBO.mp3">Mambo</a></li>
+            <li><a href="#" data-src="audio/07-CHA CHA.mp3">Cha Cha</a></li>
+            <li><a href="#" data-src="audio/10-AMERICA.mp3">America</a></li>
+            <li><a href="#" data-src="audio/11-COOL.mp3">Cool</a></li>
+            <li><a href="#" data-src="audio/14-TONIGHT.mp3">Tonight</a></li>
+            <li><a href="#" data-src="audio/15-RUMBLE.mp3">Rumble</a></li>
+            <li><a href="#" data-src="audio/16-I FEEL PRETTY.mp3">I Feel Pretty</a></li>
+            <li><a href="#" data-src="audio/18-OFFICER KRUPKE.mp3">Officer Krupke</a></li>
+            <li><a href="#" data-src="audio/20-A BOY LIKE THAT.mp3">A Boy Like That</a></li>
+
+          </ol>
+        </div>
+      </div><!-- row -->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Master Rhythm 2016</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

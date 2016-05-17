@@ -1,0 +1,17 @@
+{
+	"title":"Eighth, Quarter, Half Note, and Half Rest",
+	"description":"",
+	"lines":
+	[
+		"16:R1-L1-R3-L7-8-R3-L1-R1-8-L7-R7-L1-R1-L3-",
+		"16:R1-L1-R1-L1-8-R1-L1-R3-8-L7-R7-L3-R1-L1-R3-L3-",
+		"16:R3-L7-R3-L3-R7-L3-R7-L7-8-R1-L1-R1-L1-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":5,"l":6},
+		{"p":5,"l":7},
+		{"p":5,"l":8}
+	]
+}

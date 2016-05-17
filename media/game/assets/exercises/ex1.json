@@ -1,0 +1,15 @@
+{
+	"title":"Whole Note aka Semi-Breeve.",
+	"description":"Why do some notes have two names? Terms like this come from Latin and Italian. They can be useful to know - and worry not, you will remember it in time!",
+	"lines":
+	[
+		"16:R---,----,----,----L---,----,----,----R---,----,----,----L---,----,----,----",
+		"16:R---,----,----,----L---,----,----,----R---,----,----,----L---,----,----,----"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":1,"l":1},
+		{"p":1,"l":2}
+	]
+}

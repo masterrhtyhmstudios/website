@@ -1,0 +1,19 @@
+{
+	"title":"Eighth Note and Eighth Rest",
+	"description":"",
+	"lines":
+	[
+		"16:R-L-R-2-L-R-L-2-,R-L-R-2-L-R-L-2-,2-R1-L1-R1-2-L1-R1-L1-",
+		"16:2-R-L-R-,2-L-R-L-,R-2-L-R-L-2-R-L-,R-2-L-R-L-2-R-L-",
+		"16:R1-L1-2-R1-L1-R1-2-L1-,R1-L1-2-R1-L1-R1-2-L1-,R1-4-L1-R1-4-L1-",
+		"16:R1-4-L1-R1-4-L1-,2-R1-L1-4-R1-L1-2-,2-R1-L1-4-R1-L1-2-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":4,"l":4},
+		{"p":4,"l":5},
+		{"p":4,"l":6},
+		{"p":4,"l":7}
+	]
+}

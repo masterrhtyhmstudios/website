@@ -1,0 +1,17 @@
+{
+	"title":"Eighth Note",
+	"description":"",
+	"lines":
+	[
+		"16:R1-L1-R1-L1-R1-L1-R1-L1-,R1-L1-R1-L1-R1-L1-R1-L1-",
+		"16:R1-L1-R1-L1-R1-L1-R1-L1-,R1-L1-R1-L1-R1-L1-R1-L1-,R1-L1-R1-L1-R1-L1-R1-L1-",
+		"16:R1-L1-R1-L1-R1-L1-R1-L1-,R1-L1-R1-L1-R1-L1-R1-L1-,R1-L1-R1-L1-R1-L1-R1-L1-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":4,"l":1},
+		{"p":4,"l":2},
+		{"p":4,"l":3}
+	]
+}

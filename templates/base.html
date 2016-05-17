@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{# The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags #}
+	<link rel="icon" href="favicon.ico">
+
+	<title>{% block title %}{{ title }}{% endblock %} - Master Rhythm Studios</title>
+
+	{# <script src="assets/js/jquery.min.js"></script> #}
+	<script src="assets/js/jquery.cycle.lite.js"></script>
+
+	{# Bootstrap core CSS #}
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+	{# Custom styles for this template #}
+	<link href="jumbotron.css" rel="stylesheet">
+	<link href="assets/css/hover.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+<body> {# style="background-color: #FFF8E1"> #}
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<a class="hvr-shrink" href="#"><img id="navLogo" src="assets/img/logo_text_white_noshadow.png"></a>
+			<div id="menu" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a class="menuItem hvr-underline-reveal" href="./studios">Studios</a></li>
+					<li><a class="menuItem hvr-underline-reveal" href="./lessons">Lessons</a></li>
+					<li><a class="menuItem hvr-underline-reveal" href="./booking">Booking</a></li>
+					<li><a class="menuItem hvr-underline-reveal" href="./media">Media</a></li> 
+					<li><a class="menuItem hvr-underline-reveal" href="./store">Store</a></li>
+					<li><a class="menuItem hvr-underline-reveal" href="./testimonials">Testimonials</a></li>
+					<li><a class="menuItem hvr-underline-reveal" href="./contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="phoneNav">
+			<ul class="nav navbar-nav">
+				<li><a class="menuItem" href="./studios">Studios</a></li>
+				<li><a class="menuItem" href="./lessons">Lessons</a></li>
+				<li><a class="menuItem" href="./booking">Booking</a></li>
+				<li><a class="menuItem" href="./media">Media</a></li> 
+				<li><a class="menuItem" href="./store">Store</a></li>
+				<li><a class="menuItem" href="./testimonials">Testimonials</a></li>
+				<li><a class="menuItem" href="./contact">Contact</a></li>
+			</ul>
+		</nav>
+	{% block content %}{% endblock %}
+	</div>
+		
+
+	<!-- <script>
+	$('#slideshow').cycle();
+	</script> -->
+
+	{# Bootstrap core JavaScript #}
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

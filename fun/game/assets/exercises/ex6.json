@@ -1,0 +1,15 @@
+{
+	"title":"Quarter Note and Quarter Rest (Crotchet)",
+	"description":"Crotchets are what we know as keeping time, such as clapping your hands in a regular fashion",
+	"lines":
+	[
+		"16:R3-L3-R3-L3-R3-L3-R3-L3-R3-L3-R3-L3-R3-L3-R3-L3-",
+		"16:R3-L3-4-R3-L3-4-R3-L3-4-R3-L3-R3-L3-R3-L3-4-"
+	],
+	"repeat": true,
+	"images":
+	[
+		{"p":3,"l":1},
+		{"p":3,"l":2}
+	]
+}

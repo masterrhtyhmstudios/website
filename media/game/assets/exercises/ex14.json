@@ -1,0 +1,15 @@
+{
+	"title":"Eighth, Quarter, Half, and Whole Note",
+	"description":"",
+	"lines":
+	[
+		"16:R1-L1-R3-L7-R15-L15-R3-L1-R1-L7-",
+		"16:R1-L1-R1-L1-R3-L3-,R15-L3-R3-L1-R1-L1-R1-,L1-R1-L1-R1-L7-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":6,"l":1},
+		{"p":6,"l":2}
+	]
+}

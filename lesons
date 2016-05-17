@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Lessons at Master Rhythm</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../jumbotron.css" rel="stylesheet">
+    <link href="../assets/css/hover.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="hvr-shrink" href="../"><img id="navLogo" src="../assets/img/logo_text_black_noshadow.png"></a>
+        <div id="menu" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="menuItem hvr-underline-reveal" style="color: #ffffff" href="../lessons">Lessons</a></li>
+            <li><a class="menuItem hvr-underline-reveal" style="color: #000000" href="../booths">Booths</a></li>
+            <li><a class="menuItem hvr-underline-reveal" style="color: #000000" href="../fun">Fun</a></li> 
+            <li><a class="menuItem hvr-underline-reveal" style="color: #000000" href="../blog">Blog</a></li>
+            <li><a class="menuItem hvr-underline-reveal" style="border: none; color: #000000" href="../contact">Contact</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <nav class="phoneNav">
+      <div class="container" style="">
+        <ul class="nav navbar-nav">
+          <li><a class="menuItem" style="color: #000000" href="../">Home</a></li>
+          <li><a class="menuItem" style="background-color: #ffffff; color: #000000" href="#">Lessons</a></li>
+          <li><a class="menuItem" style="color: #000000" href="../booths">Booths</a></li>
+          <li><a class="menuItem" style="color: #000000" href="../fun">Fun</a></li> 
+          <li><a class="menuItem" style="color: #000000" href="../blog">Blog</a></li>
+          <li><a class="menuItem" style="border: none; color: #000000" href="../contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+
+    <div id="myCarousel" class="container marketing">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Lessons. <span class="text-muted">Focusing and noticing.</span></h2>
+
+          <p class="lead">
+          Interested in having lessons with Darren? Email at <a href="mailto:darren@masterrhythm.co.uk?Subject=Hi%20Darren" target="_top">darren@masterrhythm.co.uk</a> or phone at +44 7765 224 245</p>
+
+          <p class="lead">
+          Lessons are currently priced at £20 for half an hour or £40 for a whole hour.</p>
+
+          <p class="lead">
+          To see more about Darren's teaching philosophy, <a href="../blog">read the blog.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" style="width: 75%;" src="../assets/img/profile2.jpg" alt="Lessons">
+        </div>
+      </div>
+      <hr>
+      <br>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

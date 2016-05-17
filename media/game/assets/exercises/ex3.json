@@ -1,0 +1,15 @@
+{
+	"title":"Half Note",
+	"description":"This is also termed 'Minim'. It is a useful term to know, which you will remember in time. It is like giving a number a name.",
+	"lines":
+	[
+		"16:R7-L7-R7-L7-R7-L7-R7-L7-",
+		"16:R7-L7-R7-L7-R7-L7-R7-L7-"
+	],
+	"repeat": false,
+	"images":
+	[
+		{"p":2,"l":1},
+		{"p":2,"l":2}
+	]
+}
