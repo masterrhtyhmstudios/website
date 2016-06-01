@@ -1,0 +1,26 @@
+<!-- 
+    <p class="lead">A very big thank you for teaching Ellie this year. Not only has she looked forward to her lessons and really enjoyed them, but her environment with the music department has helped her settle into secondary school. She often practises at lunch times. Thank you for your patience and support.</p>
+<p> Nicola </p>
+<p class="lead">I practice weekly in the booths at Master Rhythm Studios. There is nowhere else like it in Oxford! Together with my 1 to 1 lessons with Darren, my playing has improved loads!</p>
+<p> Matthew </p>
+  </div>
+</div>
+
+ <div class="container marketing">
+  <div class="row featurette">
+    <h2 class="featurette-heading">More to follow...</h2>
+    <!-- <p class="lead">Dear Darren,</p>
+    <p class="lead">A very big thank you for teaching Ellie this year. Not only has she looked forward to her lessons and really enjoyed them, but her environment with the music department has helped her settle into secondary school. She often practises at lunch times. Thank you for your patience and support.</p> -->
+  </div>
+</div>
+
+<!-- TODO: Copy paste this to add more testimonials and remove arrows. Google 'HTML comments' if stuck. -->
+<!--
+<div class="container marketing">
+  <div class="row featurette">
+    <h2 class="featurette-heading">From Nicola<span class="text-muted"></span></h2>
+    <p class="lead">Dear Darren,</p>
+    <p class="lead">A very big thank you for teaching Ellie this year. Not only has she looked forward to her lessons and really enjoyed them, but her environment with the music department has helped her settle into secondary school. She often practises at lunch times. Thank you for your patience and support.</p>
+  </div>
+</div>
+-->
